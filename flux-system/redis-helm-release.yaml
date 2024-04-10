@@ -6,6 +6,10 @@ metadata:
 spec:
   releaseName: redis
   chart:
-    repository: https://charts.bitnami.com/bitnami
-    name: redis
-    version: "14.8.2"
+    spec:
+      chart: redis
+      sourceRef:
+        kind: HelmRepository
+        name: redis-repo
+  values:
+    # Add any custom configuration values for Redis here
