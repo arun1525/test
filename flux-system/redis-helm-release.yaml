@@ -4,6 +4,7 @@ metadata:
   name: redis
   namespace: default
 spec:
+  interval: 5m   # Specify the reconciliation interval (e.g., every 5 minutes)
   releaseName: redis
   chart:
     spec:
