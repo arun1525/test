@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- redis-helm-release.yaml
+- redis-source.yaml
+
